@@ -3,7 +3,7 @@ def Solver():
     # Time Complexity:  O(n)
     f = open('adventChanllege/2022/day2/input.txt', 'r')
     lines = f.readlines()
-    score_dict = {'A': 1, 'B': 2, 'C':3} # A for rock +1 score, B for paper +1, C for scissors +1
+    score_dict = {'A': 1, 'B': 2, 'C':3} # A for rock +1 score, B for paper +2, C for scissors +3
     action_to_weight = {'A': 0, 'B': 1, 'C': 2} # Assign weight to each action
     weight_to_action = ['A', 'B', 'C'] # weight 0 is A, weight 1 is B, weight 2 is C
     total_score = 0
