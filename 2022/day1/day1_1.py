@@ -1,7 +1,7 @@
 def Solver():
     # Space Complexity: O(1) Not counting the storage for input
     # Time Complexity:  O(n)
-    f = open('adventChanllege/2022/input.txt', 'r')
+    f = open('adventChanllege/2022/day1/input.txt', 'r')
     lines = f.readlines() + ["\n"] # Add a new line for easy process
     accum = 0
     for line in lines:
