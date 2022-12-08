@@ -26,7 +26,7 @@ def SolverMethod():
             matrix[i][j] = [int(lines[i][j]), 0, h-1, 0, w-1]
     for i in range(1, h - 1):
         for j in range(1, w - 1):
-            for k in range(9, -1, -1):
+            for k in range(9, -1, -1): # tree height is limited to [0, 9]
                 if k >= matrix[i][j][0]:
                     # Forward direction, Find lowest tree height that will block view from current tree, update the index
                     matrix[i][j][1] = max(u[j][k], matrix[i][j][1])

@@ -14,7 +14,7 @@ def SolverMethod():
                 # for edge cells, init max values to their self values
             else:
                 matrix[i][j] = [int(lines[i][j]) for k in range(5)]
-    visible_count = w * 2 + h * 2 - 4
+    visible_count = w * 2 + h * 2 - 4 # Edge trees are always visible
     for i in range(1, h - 1):
         for j in range(1, w - 1):
             # go through matrix, calculate accum upper max, lower max, left max and right max
